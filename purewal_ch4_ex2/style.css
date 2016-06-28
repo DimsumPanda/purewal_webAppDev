@@ -43,6 +43,8 @@ section {
 .comments p:nth-child(odd) {
 	background: gainsboro;
 }
+
 button {
 	padding: 1px 4px;
 }
+

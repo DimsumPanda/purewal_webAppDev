@@ -6,10 +6,15 @@ var main = function () {
 		// var $new_comment = $("<p>"),
 		// 	comment_text = $(".comment-input input").val();
 		// $new_comment.text(comment_text);
-		
-		var $new_comment = $("<p>").text($(".comment-input input").val());
 
-		$(".comments").append($new_comment);
+		// var $new_comment = $("<p>").text($(".comment-input input").val());
+		var $new_comment;
+
+		if ($(".comment-input input").val() != "") {
+			$new_comment = $("<p>").text($(".comment-input input").val());
+			$(".comments").append($new_comment);
+		}
+
 	});
 };
 

@@ -32,6 +32,17 @@ section {
 }
 
 .comments p {
-	background-color: #add8e6;
-	padding: 2px;
+	padding: 2px 3px;
+	border-radius: 5px;
+}
+
+.comments p:nth-child(even) {
+	background: lavender;
+}
+
+.comments p:nth-child(odd) {
+	background: gainsboro;
+}
+button {
+	padding: 1px 4px;
 }

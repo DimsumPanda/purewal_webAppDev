@@ -3,7 +3,7 @@ var main = function () {
 	"use strict";
 
 	$(".comment-input button").on("click", function (event) {
-		
+
 		var $new_comment;
 
 		if ($(".comment-input input").val() != "") {
@@ -12,6 +12,10 @@ var main = function () {
 			$(".comment-input input").val("");
 		}
 
+	});
+
+	$(".comment-input input").on("keypress", function (event) {
+		console.log("this is the KeyCode " + event.keyCode);
 	});
 };
 

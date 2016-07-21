@@ -7,6 +7,13 @@ header, main, footer {
 	min-width: 855px;
 }
 
+/*so that the content gets centered, but not the bg */
+
+header .container, main .container, footer .contaiiner {
+	max-width: 855px;
+	margin: auto;
+}
+
 header {
 	background: white;
 }

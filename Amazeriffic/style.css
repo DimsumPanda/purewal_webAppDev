@@ -2,6 +2,11 @@ body {
 	background: #f9e933;
 }
 
+img {
+	display: block;
+	position: ;
+}
+
 /* Ruleset for the elements to make it responsive */
 header, main, footer {
 	min-width: 855px;
@@ -9,7 +14,7 @@ header, main, footer {
 
 /*so that the content gets centered, but not the bg */
 
-header .container, main .container, footer .contaiiner {
+header .container, main .container, footer .container {
 	max-width: 855px;
 	margin: auto;
 }
@@ -21,3 +26,20 @@ header {
 main {
 	background: white;
 }
+
+[class*='col-'] {
+	float: left;
+}
+
+.col-2-3 {
+	width: 570px;
+}
+
+.col-1-3 {
+	width: 33.33%;
+}
+
+.container:after {
+	content: "";
+	display: table;
+	clear: both;

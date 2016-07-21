@@ -1,0 +1,16 @@
+body {
+	background: #f9e933;
+}
+
+/* Ruleset for the elements to make it responsive */
+header, main, footer {
+	min-width: 855px;
+}
+
+header {
+	background: white;
+}
+
+main {
+	background: white;
+}

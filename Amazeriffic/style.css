@@ -3,33 +3,31 @@ body {
 	font-family: 'Droid Sans', sans-serif;
 }
 
-
-h1, h2, h3, h4 {
-	font-family: 'Ubuntu', sans-serif;
-}
-
 h1 {
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 3em;
 	font-style: italic;
 	color: #f9e933;
 }
 
 h2 {
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 2em;
 }
 
 h3 {
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 1.5em;
+}
+
+h4 {
+	font-family: 'Ubuntu', sans-serif;
 }
 img {
 	display: block;
-	position: ;
 }
 
-/* Ruleset for the elements to make it responsive */
-header, main, footer {
-	min-width: 855px;
-}
+
 
 /*so that the content gets centered, but not the bg */
 
@@ -40,10 +38,16 @@ header .container, main .container, footer .container {
 }
 
 header {
+	min-width: 855px;
 	background: white;
 }
 
+footer {
+	min-width: 855px;
+}
+
 main {
+	min-width: 855px;
 	background: white;
 }
 

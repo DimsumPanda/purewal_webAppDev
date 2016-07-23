@@ -1,7 +1,26 @@
 body {
 	background: #f9e933;
+	font-family: 'Droid Sans', sans-serif;
 }
 
+
+h1, h2, h3, h4 {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+	font-size: 3em;
+	font-style: italic;
+	color: #f9e933;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
 img {
 	display: block;
 	position: ;
@@ -17,6 +36,7 @@ header, main, footer {
 header .container, main .container, footer .container {
 	max-width: 855px;
 	margin: auto;
+	font-size: 100%;
 }
 
 header {
@@ -59,12 +79,9 @@ main {
 	padding: 20px;
 }
 [class*='col-']:last-of-type {
-  padding-right: 0;
+	padding-right: 0;
 }
 
-body {
-	font-family: 'Droid Sans', sans-serif;
-}
-h1, h2, h3, h4 {
-	font-family: 'Ubuntu', sans-serif;
+.container h2, h3, p {
+	padding-bottom: 20px;
 }

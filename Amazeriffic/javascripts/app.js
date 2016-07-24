@@ -10,6 +10,8 @@ var main = function () {
 		"Get Groceries"
 	];
 
+	var toDoItem;
+
 	$(".tabs a span").toArray().forEach(function (element){
 		//create a click handler for this element
 		$(element).on("click", function(){
@@ -21,11 +23,15 @@ var main = function () {
 			$("main .content").empty();
 			
 			if ($element.parent().is(":nth-child(1)")){
-				console.log("First Tab clicked!");
+				$content = $("<ul>");
+				for (toDoItem = toDos.length - 1; toDoItem >= 0; toDoItem--){
+					$content.append($("<li>").text(toDos[toDoItem]));
+				}
+				$("main .content").append($content);
 			} else if ($element.parent().is(":nth-child(2)")){
 				$content = $("<ul>");
 				toDos.forEach(function(todo) {
-					$content.append($"<li>").text(todo));
+					$content.append($("<li>").text(todo));
 				});
 				$("main .content").append($content);
 			} else if ($element.parent().is(":nth-child(3)")){
@@ -35,6 +41,8 @@ var main = function () {
 			return false;
 		});
 	});
+	//trigger a fake click on the first tab
+	$(".tabs a:first-child span").trigger("click");
 };
 
 $(document).ready(main);

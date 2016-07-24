@@ -1,30 +1,30 @@
 body {
-	background: #f9e933;
-	font-family: 'Droid Sans', sans-serif;
+    background: #f9e933;
+    font-family: 'Droid Sans', sans-serif;
 }
 
 h1 {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 3em;
-	font-style: italic;
-	color: #f9e933;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3em;
+    font-style: italic;
+    color: #f9e933;
 }
 
 h2 {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 2em;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
 }
 
 h3 {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 1.5em;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
 }
 
 h4 {
-	font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 img {
-	display: block;
+    display: block;
 }
 
 
@@ -32,35 +32,35 @@ img {
 /*so that the content gets centered, but not the bg */
 
 header .container, main .container, footer .container {
-	max-width: 855px;
-	margin: auto;
-	font-size: 100%;
+    max-width: 855px;
+    margin: auto;
+    font-size: 100%;
 }
 
 header {
-	min-width: 855px;
-	background: white;
+    min-width: 855px;
+    background: white;
 }
 
 footer {
-	min-width: 855px;
+    min-width: 855px;
 }
 
 main {
-	min-width: 855px;
-	background: white;
+    min-width: 855px;
+    background: white;
 }
 
 [class*='col-'] {
-	float: left;
+    float: left;
 }
 
 .col-2-3 {
-	width: 66.66%;
+    width: 66.66%;
 }
 
 .col-1-3 {
-	width: 33.33%;
+    width: 33.33%;
 }
 
 /*
@@ -68,51 +68,51 @@ main {
 * Otherwise, the background would appear in the body
 */
 .container:after {
-	content: "";
-	display: table;
-	clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 *, *:after, *:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 [class*='col-'] {
-	padding: 20px;
+    padding: 20px;
 }
 [class*='col-']:last-of-type {
-	padding-right: 0;
+    padding-right: 0;
 }
 
 .container h2, h3, p {
-	padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .container {
-	padding: 20px;
+    padding: 20px;
 }
 .tabs a span {
-	display: inline-block;
-	border-radius: 5px 5px 0 0;
-	width: 100px;
-	margin-right: 10px;
-	text-align: center;
-	background: #ddd;
-	padding: 5px;
+    display: inline-block;
+    border-radius: 5px 5px 0 0;
+    width: 100px;
+    margin-right: 10px;
+    text-align: center;
+    background: #ddd;
+    padding: 5px;
 }
 
 .tabs a span.active {
-	background: #eee;
+    background: #eee;
 }
 
 .content {
-	background: #eee;
-	padding: 20px;
+    background: #eee;
+    padding: 20px;
 }
 li {
-	padding: 5px;
-	margin: 20px;
-	background-color: #fff;
+    padding: 5px;
+    margin: 20px;
+    background-color: #fff;
 }

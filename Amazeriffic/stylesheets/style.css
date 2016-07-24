@@ -106,3 +106,13 @@ main {
 .tabs a span.active {
 	background: #eee;
 }
+
+.content {
+	background: #eee;
+	padding: 20px;
+}
+li {
+	padding: 5px;
+	margin: 20px;
+	background-color: #fff;
+}

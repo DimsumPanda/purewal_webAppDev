@@ -10,13 +10,15 @@ var main = function () {
 		"Get Groceries"
 	];
 
-	var toDoItem;
 
 	$(".tabs a span").toArray().forEach(function (element){
+			var $element = $(element);
 		//create a click handler for this element
 		$(element).on("click", function(){
-			var $element = $(element), 
-							$content;
+			var $content,
+				$input,
+				$button,
+				toDoItem;
 
 			$(".tabs a span").removeClass("active");
 			$(element).addClass("active");
@@ -27,17 +29,33 @@ var main = function () {
 				for (toDoItem = toDos.length - 1; toDoItem >= 0; toDoItem--){
 					$content.append($("<li>").text(toDos[toDoItem]));
 				}
-				$("main .content").append($content);
 			} else if ($element.parent().is(":nth-child(2)")){
 				$content = $("<ul>");
 				toDos.forEach(function(todo) {
 					$content.append($("<li>").text(todo));
 				});
-				$("main .content").append($content);
 			} else if ($element.parent().is(":nth-child(3)")){
-				console.log("Third Tab clicked!");
+				$input = $("<input>"),
+				$button = $("<button>").text("+");
+
+				$button.on("click", function () {
+					if ($input.val() !== "") {
+						toDos.push($input.val());
+						$input.val("");
+					}
+				});
+				$input.on("keypress", function (event) {
+					if (event.keyCode === 13) {
+						if ($input.val() !== "") {
+							toDos.push($input.val());
+							$input.val("");
+						}
+					}
+				});
+				$content = $("<div>").append($input, $button);
 			}
 
+			$("main .content").append($content);
 			return false;
 		});
 	});

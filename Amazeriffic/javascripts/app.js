@@ -4,7 +4,7 @@ var main = function () {
 	var toDos = [
 		"Finish writing this book",
 		"Take Gracie to the park",
-		"Answeer emails",
+		"Answer emails",
 		"Prep for Monday's class",
 		"Make up some new ToDos",
 		"Get Groceries"
